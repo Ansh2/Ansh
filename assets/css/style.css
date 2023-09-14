@@ -1,6 +1,6 @@
-/* Add a background gradient */
+/* Set a background color */
 body {
-  background: linear-gradient(45deg, #ffcc00, #ff0066);
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,18 +8,17 @@ body {
   margin: 0;
 }
 
-/* Style for the container */
+/* Remove container styles */
 .container {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  /* Remove background, padding, and box-shadow */
+  background: none;
+  padding: 0;
+  box-shadow: none;
 }
 
-/* Style for buttons with a gradient background */
+/* Style for buttons */
 .button {
-  margin-right: 10px;
-  background: linear-gradient(45deg, #ff0066, #ffcc00);
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -27,49 +26,42 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 /* Hover effect for buttons */
 .button:hover {
-  background: linear-gradient(45deg, #ffcc00, #ff0066);
-  transform: scale(1.05);
+  background-color: #0056b3;
 }
 
-/* Style for the title and subtitle with a colorful gradient text */
+/* Style for the title and subtitle */
 .title {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Calibri', sans-serif; /* Use Calibri font */
   font-size: 36px;
   margin-bottom: 10px;
-  background: linear-gradient(45deg, #ff0066, #ffcc00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center; /* Center the title */
+  color: #007bff; /* Bright blue color for the title */
+  text-align: left; /* Align to the left */
+  font-weight: bold; /* Make the title bold */
 }
 
 .subtitle {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Calibri', sans-serif; /* Use Calibri font */
   font-size: 24px;
   margin-bottom: 20px;
-  text-align: center; /* Center the subtitle */
-  color: #ff0066; /* Pink color for the subtitle */
+  text-align: left; /* Align to the left */
 }
 
 /* Center images */
 img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Make other text black and emphasize near the center */
 p {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Calibri', sans-serif; /* Use Calibri font */
   font-size: 18px;
-  text-align: center;
-  color: #333; /* Slightly darker text color */
+  text-align: left; /* Align to the left */
+  color: #000; /* Black color for the text */
   margin: 10px 0; /* Add margin for spacing */
 }
