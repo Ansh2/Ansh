@@ -1,6 +1,6 @@
-/* Add a background color and center the text */
+/* Add a background gradient */
 body {
-  background-color: #f0f0f0;
+  background: linear-gradient(45deg, #ffcc00, #ff0066);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,16 +10,16 @@ body {
 
 /* Style for the container */
 .container {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Style for buttons */
+/* Style for buttons with a gradient background */
 .button {
   margin-right: 10px;
-  background-color: #007bff;
+  background: linear-gradient(45deg, #ff0066, #ffcc00);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -27,20 +27,23 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 /* Hover effect for buttons */
 .button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(45deg, #ffcc00, #ff0066);
+  transform: scale(1.05);
 }
 
-/* Style for the title and subtitle */
+/* Style for the title and subtitle with a colorful gradient text */
 .title {
   font-family: 'Arial', sans-serif;
   font-size: 36px;
   margin-bottom: 10px;
-  color: #007bff; /* Blue color for the title */
+  background: linear-gradient(45deg, #ff0066, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center; /* Center the title */
 }
 
@@ -49,12 +52,17 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center; /* Center the subtitle */
+  color: #ff0066; /* Pink color for the subtitle */
 }
 
 /* Center images */
 img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Make other text black and emphasize near the center */
@@ -62,6 +70,6 @@ p {
   font-family: 'Arial', sans-serif;
   font-size: 18px;
   text-align: center;
-  color: #000; /* Black color for the text */
+  color: #333; /* Slightly darker text color */
   margin: 10px 0; /* Add margin for spacing */
 }
